@@ -15,21 +15,66 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hqC-Hu-SHM">
-                                <rect key="frame" x="186" y="191" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose an Option" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hqC-Hu-SHM">
+                                <rect key="frame" x="109.5" y="433.5" width="195" height="29"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Italic" family="Helvetica Neue" pointSize="24"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oRd-TO-8c1">
+                                <rect key="frame" x="64.5" y="272" width="285" height="131.5"/>
+                                <string key="text">Learning
+Mathematics</string>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="48"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S4k-r7-A7K">
+                                <rect key="frame" x="117" y="492.5" width="180" height="60"/>
+                                <color key="backgroundColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="180" id="Psd-tT-OIg"/>
+                                    <constraint firstAttribute="height" constant="60" id="VKx-YE-fZD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="22"/>
+                                <state key="normal" title="Teach Me!">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eR6-UP-BDv" userLabel="Challenge Me">
+                                <rect key="frame" x="117" y="582.5" width="180" height="60"/>
+                                <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="0hG-yq-FA1"/>
+                                    <constraint firstAttribute="width" constant="180" id="78r-WR-eUc"/>
+                                    <constraint firstAttribute="height" constant="60" id="alo-pd-ylY"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="180" id="zkf-hu-M2S"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="22"/>
+                                <state key="normal" title="Challenge Me">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="tintColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="hqC-Hu-SHM" firstAttribute="top" secondItem="oRd-TO-8c1" secondAttribute="bottom" constant="30" id="AkB-7n-uSa"/>
+                            <constraint firstItem="oRd-TO-8c1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="EFc-5n-UaA"/>
+                            <constraint firstItem="S4k-r7-A7K" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FS4-48-Oqq"/>
+                            <constraint firstItem="hqC-Hu-SHM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KfG-bX-WiL"/>
+                            <constraint firstItem="S4k-r7-A7K" firstAttribute="top" secondItem="hqC-Hu-SHM" secondAttribute="bottom" constant="30" id="Kr8-oV-fw9"/>
+                            <constraint firstItem="hqC-Hu-SHM" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="gL9-J8-ZFx"/>
+                            <constraint firstItem="eR6-UP-BDv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oUB-aJ-5NX"/>
+                            <constraint firstItem="eR6-UP-BDv" firstAttribute="top" secondItem="S4k-r7-A7K" secondAttribute="bottom" constant="30" id="xvF-K8-gpe"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="teachButton" destination="S4k-r7-A7K" id="6TT-Bw-NuZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="133" y="139"/>
+            <point key="canvasLocation" x="131.8840579710145" y="138.61607142857142"/>
         </scene>
     </scenes>
 </document>
