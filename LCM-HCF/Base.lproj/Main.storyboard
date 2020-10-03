@@ -38,6 +38,9 @@ Mathematics</string>
                                 <state key="normal" title="Teach Me!">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="XQg-iN-vED" kind="presentation" modalPresentationStyle="fullScreen" id="oqY-Ym-fYL"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eR6-UP-BDv" userLabel="Challenge Me">
                                 <rect key="frame" x="117" y="582.5" width="180" height="60"/>
@@ -52,6 +55,9 @@ Mathematics</string>
                                 <state key="normal" title="Challenge Me">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="XhM-gO-HZl" kind="presentation" modalPresentationStyle="fullScreen" id="Zyp-8B-pON"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -75,6 +81,37 @@ Mathematics</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="131.8840579710145" y="138.61607142857142"/>
+        </scene>
+        <!--Teach Me View-->
+        <scene sceneID="MZc-qR-17b">
+            <objects>
+                <viewController id="XQg-iN-vED" userLabel="Teach Me View" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pcd-J8-WvN">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="YwH-5Z-Jbj"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="gkZ-9w-VUV"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZIY-Zb-n2q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1000" y="139"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="dDZ-zq-XiS">
+            <objects>
+                <viewController id="XhM-gO-HZl" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YRr-iw-ibq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="1ae-kM-sfq"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OPt-gR-bgV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="842"/>
         </scene>
     </scenes>
 </document>
