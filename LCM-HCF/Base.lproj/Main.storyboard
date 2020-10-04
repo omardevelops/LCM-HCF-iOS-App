@@ -10,7 +10,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="LCM_HCF" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -83,9 +83,6 @@ Mathematics</string>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <connections>
-                        <outlet property="teachButton" destination="S4k-r7-A7K" id="6TT-Bw-NuZ"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -349,50 +346,50 @@ LCM = 2 x 3 x 3 x 5 = 90
         <!--Challenge View-->
         <scene sceneID="dDZ-zq-XiS">
             <objects>
-                <viewController id="XhM-gO-HZl" userLabel="Challenge View" sceneMemberID="viewController">
+                <viewController id="XhM-gO-HZl" userLabel="Challenge View" customClass="ViewController" customModule="LCM_HCF" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YRr-iw-ibq">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Challenge" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="39B-3i-KpB">
                                 <rect key="frame" x="0.0" y="74" width="375" height="49.333333333333343"/>
-                                <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="36"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Find LCM and HCF of:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sZR-qf-rW9">
                                 <rect key="frame" x="0.0" y="123.33333333333333" width="375" height="35.666666666666671"/>
-                                <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="26"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="80 and 100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KUA-zR-8dU">
-                                <rect key="frame" x="94.666666666666686" y="199" width="186" height="49.666666666666657"/>
-                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="36"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Numbers" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KUA-zR-8dU">
+                                <rect key="frame" x="107.66666666666669" y="189" width="160" height="50"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-BoldItalic" family="Avenir Next" pointSize="36"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LCM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T6C-Lb-CeN">
-                                <rect key="frame" x="149.66666666666666" y="308.66666666666669" width="76" height="50"/>
+                                <rect key="frame" x="149.66666666666666" y="329" width="76" height="50"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="36"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bgR-ps-w3V" userLabel="LCM_Textbox">
-                                <rect key="frame" x="10" y="358.66666666666669" width="355" height="35"/>
+                                <rect key="frame" x="10" y="379" width="355" height="35"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="22"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HCF" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hyE-IA-XFB">
-                                <rect key="frame" x="151.66666666666666" y="423.66666666666669" width="72" height="50"/>
+                                <rect key="frame" x="151.66666666666666" y="429" width="72" height="50"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="36"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yI8-w6-iwk" userLabel="LCM_Textbox">
-                                <rect key="frame" x="10" y="473.66666666666669" width="355" height="35.333333333333314"/>
+                                <rect key="frame" x="10" y="479" width="355" height="35.333333333333371"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="22"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -407,9 +404,12 @@ LCM = 2 x 3 x 3 x 5 = 90
                                 <state key="normal" title="Main Menu">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="ERh-v2-lAM"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Yu-yG-oY5">
-                                <rect key="frame" x="30" y="549" width="315" height="60"/>
+                                <rect key="frame" x="30" y="554.33333333333337" width="315" height="60"/>
                                 <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="rew-UH-H1i"/>
@@ -418,7 +418,16 @@ LCM = 2 x 3 x 3 x 5 = 90
                                 <state key="normal" title="Submit">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="submitButton:" destination="XhM-gO-HZl" eventType="touchUpInside" id="NR5-z1-79B"/>
+                                </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Msg" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WcF-W2-FBZ">
+                                <rect key="frame" x="150" y="249" width="75" height="50"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-BoldItalic" family="Avenir Next" pointSize="36"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -431,20 +440,22 @@ LCM = 2 x 3 x 3 x 5 = 90
                             <constraint firstItem="bgR-ps-w3V" firstAttribute="top" secondItem="T6C-Lb-CeN" secondAttribute="bottom" id="IZX-du-Teq"/>
                             <constraint firstItem="9Yu-yG-oY5" firstAttribute="leading" secondItem="1ae-kM-sfq" secondAttribute="leading" constant="30" id="KOy-dr-RzQ"/>
                             <constraint firstItem="KUA-zR-8dU" firstAttribute="centerX" secondItem="YRr-iw-ibq" secondAttribute="centerX" id="M7e-li-VAT"/>
-                            <constraint firstItem="T6C-Lb-CeN" firstAttribute="top" secondItem="KUA-zR-8dU" secondAttribute="bottom" constant="60" id="OET-zo-eW6"/>
                             <constraint firstItem="1ae-kM-sfq" firstAttribute="trailing" secondItem="bgR-ps-w3V" secondAttribute="trailing" constant="10" id="Ped-Yw-731"/>
                             <constraint firstItem="bgR-ps-w3V" firstAttribute="leading" secondItem="1ae-kM-sfq" secondAttribute="leading" constant="10" id="RfL-wd-FKg"/>
                             <constraint firstItem="sZR-qf-rW9" firstAttribute="centerX" secondItem="YRr-iw-ibq" secondAttribute="centerX" id="Sr8-gI-RWT"/>
                             <constraint firstItem="39B-3i-KpB" firstAttribute="top" secondItem="1ae-kM-sfq" secondAttribute="top" constant="30" id="SwB-eR-Zxh"/>
                             <constraint firstItem="sZR-qf-rW9" firstAttribute="top" secondItem="39B-3i-KpB" secondAttribute="bottom" id="TBG-dU-DFD"/>
                             <constraint firstItem="hyE-IA-XFB" firstAttribute="centerX" secondItem="YRr-iw-ibq" secondAttribute="centerX" id="XzX-vJ-jjQ"/>
-                            <constraint firstItem="KUA-zR-8dU" firstAttribute="top" secondItem="sZR-qf-rW9" secondAttribute="bottom" constant="40" id="e9C-Pf-RWt"/>
+                            <constraint firstItem="WcF-W2-FBZ" firstAttribute="centerX" secondItem="YRr-iw-ibq" secondAttribute="centerX" id="bbM-st-mwU"/>
+                            <constraint firstItem="KUA-zR-8dU" firstAttribute="top" secondItem="sZR-qf-rW9" secondAttribute="bottom" constant="30" id="e9C-Pf-RWt"/>
                             <constraint firstItem="sZR-qf-rW9" firstAttribute="leading" secondItem="1ae-kM-sfq" secondAttribute="leading" id="eOC-rV-ZAn"/>
+                            <constraint firstItem="T6C-Lb-CeN" firstAttribute="top" secondItem="WcF-W2-FBZ" secondAttribute="bottom" constant="30" id="eUm-Ph-hda"/>
                             <constraint firstItem="1ae-kM-sfq" firstAttribute="trailing" secondItem="39B-3i-KpB" secondAttribute="trailing" id="g1X-uI-5mW"/>
                             <constraint firstItem="39B-3i-KpB" firstAttribute="centerX" secondItem="YRr-iw-ibq" secondAttribute="centerX" id="gEJ-qG-sgL"/>
                             <constraint firstItem="yI8-w6-iwk" firstAttribute="centerX" secondItem="YRr-iw-ibq" secondAttribute="centerX" id="jJp-Xe-9G1"/>
                             <constraint firstItem="1ae-kM-sfq" firstAttribute="bottom" secondItem="ACV-3v-j6Z" secondAttribute="bottom" constant="30" id="nC9-vT-GvW"/>
-                            <constraint firstItem="hyE-IA-XFB" firstAttribute="top" secondItem="bgR-ps-w3V" secondAttribute="bottom" constant="30" id="pgp-56-rzu"/>
+                            <constraint firstItem="hyE-IA-XFB" firstAttribute="top" secondItem="bgR-ps-w3V" secondAttribute="bottom" constant="15" id="pgp-56-rzu"/>
+                            <constraint firstItem="WcF-W2-FBZ" firstAttribute="top" secondItem="KUA-zR-8dU" secondAttribute="bottom" constant="10" id="qf3-nZ-dTV"/>
                             <constraint firstItem="1ae-kM-sfq" firstAttribute="trailing" secondItem="yI8-w6-iwk" secondAttribute="trailing" constant="10" id="sPi-Qx-dud"/>
                             <constraint firstItem="T6C-Lb-CeN" firstAttribute="centerX" secondItem="YRr-iw-ibq" secondAttribute="centerX" id="vfD-j8-3Le"/>
                             <constraint firstItem="1ae-kM-sfq" firstAttribute="trailing" secondItem="sZR-qf-rW9" secondAttribute="trailing" id="wcb-gk-dmP"/>
@@ -452,6 +463,13 @@ LCM = 2 x 3 x 3 x 5 = 90
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="1ae-kM-sfq"/>
                     </view>
+                    <connections>
+                        <outlet property="HCF_Field" destination="yI8-w6-iwk" id="9CB-5L-1ZA"/>
+                        <outlet property="LCM_Field" destination="bgR-ps-w3V" id="kx1-cX-pSP"/>
+                        <outlet property="firstNumLabel" destination="KUA-zR-8dU" id="Zc3-Hb-zBX"/>
+                        <outlet property="secondNumLabel" destination="WcF-W2-FBZ" id="Zuc-yA-tYN"/>
+                        <outlet property="submitButtonOut" destination="9Yu-yG-oY5" id="2ve-mZ-7XJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OPt-gR-bgV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -460,7 +478,8 @@ LCM = 2 x 3 x 3 x 5 = 90
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="tkc-Kv-TUd"/>
-        <segue reference="E8a-70-Xa9"/>
+        <segue reference="oqY-Ym-fYL"/>
+        <segue reference="ERh-v2-lAM"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="45_Tree" width="1107" height="1411"/>

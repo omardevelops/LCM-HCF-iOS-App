@@ -15,8 +15,6 @@
 		29373DDB2528639A00197DD9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29373DD92528639A00197DD9 /* LaunchScreen.storyboard */; };
 		29373DE62528639A00197DD9 /* LCM_HCFTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29373DE52528639A00197DD9 /* LCM_HCFTests.swift */; };
 		29373DF12528639A00197DD9 /* LCM_HCFUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29373DF02528639A00197DD9 /* LCM_HCFUITests.swift */; };
-		29373DFF2528939600197DD9 /* TeachMe.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29373DFE2528939600197DD9 /* TeachMe.storyboard */; };
-		29373E01252893BA00197DD9 /* ChallengeMe.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29373E00252893BA00197DD9 /* ChallengeMe.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,8 +49,6 @@
 		29373DEC2528639A00197DD9 /* LCM-HCFUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "LCM-HCFUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		29373DF02528639A00197DD9 /* LCM_HCFUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LCM_HCFUITests.swift; sourceTree = "<group>"; };
 		29373DF22528639A00197DD9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		29373DFE2528939600197DD9 /* TeachMe.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TeachMe.storyboard; sourceTree = "<group>"; };
-		29373E00252893BA00197DD9 /* ChallengeMe.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ChallengeMe.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,8 +103,6 @@
 				29373DD02528639300197DD9 /* SceneDelegate.swift */,
 				29373DD22528639300197DD9 /* ViewController.swift */,
 				29373DD42528639300197DD9 /* Main.storyboard */,
-				29373DFE2528939600197DD9 /* TeachMe.storyboard */,
-				29373E00252893BA00197DD9 /* ChallengeMe.storyboard */,
 				29373DD72528639A00197DD9 /* Assets.xcassets */,
 				29373DD92528639A00197DD9 /* LaunchScreen.storyboard */,
 				29373DDC2528639A00197DD9 /* Info.plist */,
@@ -238,8 +232,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				29373E01252893BA00197DD9 /* ChallengeMe.storyboard in Resources */,
-				29373DFF2528939600197DD9 /* TeachMe.storyboard in Resources */,
 				29373DDB2528639A00197DD9 /* LaunchScreen.storyboard in Resources */,
 				29373DD82528639A00197DD9 /* Assets.xcassets in Resources */,
 				29373DD62528639300197DD9 /* Main.storyboard in Resources */,
