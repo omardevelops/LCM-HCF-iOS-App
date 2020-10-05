@@ -138,7 +138,7 @@ class ViewController: UIViewController {
             secondNumLabel.textColor = UIColor.systemGreen
             
             
-            submitButtonOut.setTitle("Try Another", for: .normal)
+            submitButtonOut.setTitle("Next Level", for: .normal)
             submitButtonOut.backgroundColor = UIColor.systemBlue
             
         }

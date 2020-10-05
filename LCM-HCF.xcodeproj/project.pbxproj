@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		29200E43252AED6400D44431 /* CalcViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29200E42252AED6400D44431 /* CalcViewController.swift */; };
 		29373DCF2528639300197DD9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29373DCE2528639300197DD9 /* AppDelegate.swift */; };
 		29373DD12528639300197DD9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29373DD02528639300197DD9 /* SceneDelegate.swift */; };
 		29373DD32528639300197DD9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29373DD22528639300197DD9 /* ViewController.swift */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		29200E42252AED6400D44431 /* CalcViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalcViewController.swift; sourceTree = "<group>"; };
 		29373DCB2528639300197DD9 /* LCM-HCF.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LCM-HCF.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		29373DCE2528639300197DD9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		29373DD02528639300197DD9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 				29373DCE2528639300197DD9 /* AppDelegate.swift */,
 				29373DD02528639300197DD9 /* SceneDelegate.swift */,
 				29373DD22528639300197DD9 /* ViewController.swift */,
+				29200E42252AED6400D44431 /* CalcViewController.swift */,
 				29373DD42528639300197DD9 /* Main.storyboard */,
 				29373DD72528639A00197DD9 /* Assets.xcassets */,
 				29373DD92528639A00197DD9 /* LaunchScreen.storyboard */,
@@ -260,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				29373DD32528639300197DD9 /* ViewController.swift in Sources */,
+				29200E43252AED6400D44431 /* CalcViewController.swift in Sources */,
 				29373DCF2528639300197DD9 /* AppDelegate.swift in Sources */,
 				29373DD12528639300197DD9 /* SceneDelegate.swift in Sources */,
 			);
