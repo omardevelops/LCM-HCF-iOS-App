@@ -9,13 +9,16 @@
 import UIKit
 
 class ViewController: UIViewController {
+    // Class variables
     var firstNum = 80
     var secondNum = 120
-    var victory = false
+    var victory = false // Variable used to allow user to move to next level
+    
+    // Each index corresponds to a pair of numbers from these lists
     let numsList1 = [14, 36, 81, 80, 15, 7, 98, 52, 16, 18, 66, 102, 505]
     let numsList2 = [35, 4, 54, 120, 22, 7, 30, 10, 32, 240, 96, 201, 105]
     
-    var listIndex = 0
+    var listIndex = 0 // Index for both lists
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -58,7 +61,7 @@ class ViewController: UIViewController {
     }
     
     func getIntersection(array1 : [Int], array2 : [Int]) -> [Int] {
-        return array2.filter(array1.contains)
+        return array2.filter(array1.contains) // An alternative way to find intersection, may not be used anymore due to a bug
     }
     
     func calculateValues(_ num1 : Int,_ num2 : Int) -> [Int] {
@@ -105,7 +108,7 @@ class ViewController: UIViewController {
     }
     
     
-    
+    // Outlets and Actions Declarations
     @IBOutlet weak var firstNumLabel: UILabel!
     
     @IBOutlet weak var secondNumLabel: UILabel!
@@ -118,6 +121,7 @@ class ViewController: UIViewController {
     
     @IBAction func submitButton(_ sender: UIButton) {
         
+        
         if(victory) {
             victory = false
             generateNumbers()
@@ -127,10 +131,18 @@ class ViewController: UIViewController {
         let LCM = LCM_HCF[0]
         let HCF = LCM_HCF[1]
 
-        let userLCMInput = Int(LCM_Field.text ?? "nil")
-        let userHCFInput = Int(HCF_Field.text ?? "nil")
+        let userLCMInput = Int(LCM_Field.text ?? "nil") ?? -1
+        let userHCFInput = Int(HCF_Field.text ?? "nil") ?? -1
+            
+        if (userLCMInput <= 0 || userHCFInput <= 0) {
+                let alert = UIAlertController(title: "Invalid values!", message: "Make sure to enter a positive integer.", preferredStyle: .alert)
+                
+                alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+
+                self.present(alert, animated: true)
+        }
         
-        if(userLCMInput == LCM && userHCFInput == HCF) {
+        else if (userLCMInput == LCM && userHCFInput == HCF) {
             victory = true
             firstNumLabel.textColor = UIColor.systemGreen
             
@@ -142,14 +154,14 @@ class ViewController: UIViewController {
             submitButtonOut.backgroundColor = UIColor.systemBlue
             
         }
-        else if(userLCMInput == LCM && userHCFInput != HCF) {
+        else if (userLCMInput == LCM && userHCFInput != HCF) {
             firstNumLabel.textColor = UIColor.systemRed
             
             secondNumLabel.text = "HCF is wrong!"
             secondNumLabel.textColor = UIColor.systemRed
             
         }
-        else if(userLCMInput != LCM && userHCFInput == HCF) {
+        else if (userLCMInput != LCM && userHCFInput == HCF) {
             firstNumLabel.textColor = UIColor.systemRed
             
             secondNumLabel.text = "LCM is wrong!"
