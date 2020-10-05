@@ -84,17 +84,26 @@ class CalcViewController: UIViewController {
     @IBOutlet weak var secondNumField: UITextField!
     
     @IBAction func calculateButton(_ sender: UIButton) {
-        let num1 = Int(firstNumField.text!)
-        let num2 = Int(secondNumField.text!)
+        let num1 = Int(firstNumField.text!) ?? -1
+        let num2 = Int(secondNumField.text!) ?? -1
         
-        let LCM_HCF = calculateValues(num1!, num2!)
+        if(num1 > 0 && num2 > 0) {
+        let LCM_HCF = calculateValues(num1, num2)
         let LCM = LCM_HCF[0]
         let HCF = LCM_HCF[1]
         print(LCM)
         print(HCF)
-        
         LCMResult.text = "LCM=" + String(LCM)
         HCFResult.text = "HCF=" + String(HCF)
+        } else {
+            let alert = UIAlertController(title: "Invalid values!", message: "Make sure to enter a positive integer.", preferredStyle: .alert)
+            
+            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+
+            self.present(alert, animated: true)
+            
+        }
+        
         
     }
     
